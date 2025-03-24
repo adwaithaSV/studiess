@@ -3,9 +3,79 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="bg-primary">
+	<div class="container bg-light" style="margin-top:30px;margin-bottom: 10px;padding: 50px 100px;">
+		<h1 class="display-4 text-primary" style="font-size:20px; margin-bottom:30px; text-align: center;"><strong><b>Fill The Below Details</b></strong></h1>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text bg-primary text-light">Username</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Enter Username">
+  		</div>
+  		<br>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text bg-primary text-light">Password</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Enter Password">
+  		</div>
+  		<br>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text bg-primary text-light">Email</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Enter Email">
+			<div class="input-group-append">
+				<span class="input-group-text bg-primary text-light">@gmail.com</span>
+			</div>
+  		</div>
+  		<br>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text bg-primary text-light" style="margin-right: 10px;">Gender</span>
+			</div>
+			<input type="radio" class="form" name="Gender" value="male">
+			<label name="Gender" value="male"style="margin:10px;">Male</label>
+			<input type="radio" class="form" name="Gender" value="Female"> 
+			<label name="Gender" value="Female"style="margin:10px;">Female</label>
+  		</div>
+  		<br>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text bg-primary text-light">Age</span>
+			</div>
+			<input type="number" class="form-control" placeholder="Enter Age">
+  		</div>
+  		<br>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text bg-primary text-light">City</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Enter Your City">
+  		</div>
+  		<br>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text bg-primary text-light">Pincode</span>
+			</div>
+			<input type="number" class="form-control" maxlength="6" placeholder="Enter the Pincode">
+  		</div>
+  		<br>
+		<div class="input-group">
+			<div class="input-group-prepend" >
+				<span class="input-group-text bg-primary text-light">Country</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Enter Your Country">
+  		</div>
+  		<br>
+  		<div class="btn btn-success">submit</div>
+	</div>
 
 </body>
 </html>
