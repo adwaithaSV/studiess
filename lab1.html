@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lab 1</title>
+</head>
+<body>
+<form>
+
+	<label for="name">Name </label>
+	<input type="text" id="name" name="Name" maxlength="25"><br>
+
+
+	<label for="email">Email </label>
+	<input type="email" id="email" name="Email"><br>
+
+
+	<label for="password">Password </label>
+	<input type="password" id="password" name="Password" pattern="[A-Za-z].{6,}" required><br>
+
+
+	<label for="category">category </label>
+	<select id="category" name="category" required>
+		<option value="Student">Student</option>
+		<option value="employee">Employee</option>
+		<option value="freelancer" selected>Freelancer</option>
+	</select><br>
+
+	<label for="date">Event Date</label>
+	<input type="date" id="date" name="date" required><br>
+
+
+
+
+	<label>Ticket :</label>
+	<input type="radio" id="t1" name="tickets" value="tick" required>
+	<label for="t1">Ticket 1</label>
+	<input type="radio" id="t2" name="tickets" value="tick">
+	<label for="t2">Ticket 2</label>
+	<input type="radio" id="t3" name="tickets" value="tick">
+	<label for="t3">Ticket 3</label><br>
+
+
+	<label for="pay">Online Payment</label>
+	<input type="checkbox" id="pay"name="Online Payment" required> <br>
+
+
+	<label id="notes">Notes</label>
+	<textarea id="notes" rows="10" cols="50"></textarea><br>
+
+
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>

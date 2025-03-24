@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+<style>
+    h1 {
+        color: #36CFFF;
+    }
+
+    .red {
+            color:red;
+        }
+        #head{
+            color: royalblue;
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+        
+        input[type = "text"] {
+            background-color:darkgreen;
+        }
+
+        * {
+            font-weight:bold;
+            }
+            
+</style>
+</head>
+<body>
+    <h1 id="head">Element Selector:This selector the color apply only in tags.</h1>
+    <h2 class="red">Class Selectors: You can define the style on class attribute of the elements.</h2>
+    <p id="orange">ID Selectors:You can define style rules based on the id attribute of the elements.</p>
+    <p><input type="text" placeholder="name">Attribute Selectors</p>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			font-family: sans-serif;
+		}
+		h1{
+			color:#d9533a;
+		}
+		.email, .password{
+			font-weight: bold;
+			font-size:large;
+		}
+		.remember{
+			font-size:medium;
+		}
+		.btn{
+			width: 96%;
+			height: 40px;
+    		padding: 10px;
+    		background:#d9533a;
+    		color: white;
+    		border-color:#d9533a ;
+    		border-radius: 3px;
+    		font-size: 15px;
+    		font-weight: bold;
+    		border-style:solid ;
+		}
+		form{
+			border:1px groove white;
+			float: right;
+			background-color: white;
+			width: 50%;
+			padding-top: 145px;
+			padding-bottom: 137px;
+			padding-left: 20px;
+			padding-right: 0px;
+			margin-top:0px ;
+			margin-bottom: 0px;
+			margin-right: 0px;
+			line-height:40px;
+		}
+		.mail , .pass{
+			width: 95%;
+			height: 25px;
+			line-height: 5px;
+		}
+		.btn:hover{
+			cursor: pointer;
+		}
+		body{
+			background-image: linear-gradient(#c6b6fc , #fad5bb);
+		}
+		@media only screen and (max-width:600px){
+				body {
+				background: none;
+				margin-top: 10%;
+				margin-left: 30px;
+				height:100%;
+			}
+			form {
+				width: 100%;
+				border:0px;
+				padding:4px;
+			}
+		}
+	</style>
+</head>
+<body>
+<form>
+	<h1 style="line-height: 60px;">Login Form</h1>
+	<div class="ad">
+	<label class="email">Email:</label><br>
+	<input type="Email" class="mail" name="email"><br>
+	<label class="password">Password :</label><br>
+	<input type="Password" class="pass" name="pass"><br>
+	<div class="remember">
+	<input type="checkbox" name="me">
+	<label class="me">Remember Me</label>
+	</div>
+	<button class="btn" type="button">Login</button>
+	</div>
+</form>
+</body>
+</html>

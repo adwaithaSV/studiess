@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>csslab4</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		table,td,th,tr{
+			border-collapse: collapse;
+			border:1px solid grey;
+			margin-top:2%;
+			margin-left: 17%;
+			text-align: left;
+			font-family: serif;
+			padding-top: 4px;
+			padding-left: 4px;
+			padding-right: 4px;
+			padding-bottom: 4px;
+		}
+		td,tr{
+			font-weight:100;
+		}
+		#eye{
+			color: blue;
+		}
+		#pen{
+			color:#ffcc40;
+		}
+		#del{
+			color: orangered;
+		}
+
+		.det{
+			font-weight: bold;
+
+		}
+		.headin{
+			text-align: center;
+			margin: 5%;
+			font-size: xx-large;
+		}
+		.sln{
+			width: 15px;
+		}
+		.name{
+			width: 150px;
+		}
+		.add{
+			width: 150px;
+		}
+		.city{
+			width: 100px;
+		}
+		.pin{
+			width: 80px;
+		}
+		.con{
+			width: 100px;
+		}
+		.action{
+			width: 80px;
+		}
+		.show{
+			margin: 5%;
+			float: left;
+
+		}
+		input{
+			float: right;
+			margin: 5%;
+		}
+		.low{
+			margin-top: 5%;
+			margin-left: 5%;
+			display: inline;
+
+		}
+		.rig{
+			float: right;
+			margin: 5%;
+			display:inline;
+		}
+		.pre{
+			border: 1px solid grey;
+			background-color: lightgrey;
+			padding: 5px 3px;
+			word-spacing: 10px;
+		}
+		.next{
+			border: 1px solid grey;
+			background-color: lightgrey;
+			padding: 5px 3px;
+			word-spacing: 10px;
+		}
+		.one{
+			border: 1px solid grey;
+			border-radius: 50%;
+			background-color: lightgrey;
+			padding: 2px 7px;
+			word-spacing: 40px;
+		}
+		#three{
+			background-color: #77a8f7;
+		}
+
+	</style>
+
+</head>
+<body>
+	<p class="headin">Customer <span class="det">Details</span> </p>
+	<p class="show">Show <select class="option">
+		<option value="option">1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option selected>5</option>
+	</select> entries</p>
+	<input type="text" name="search" placeholder="search">
+<br>
+<table>
+	<tr>
+		<th class="sln">#</th>
+		<th class="name">Name </th>
+		<th class="add">Address</th>
+		<th class="city">City</th>
+		<th class="pin">Pincode </th>
+		<th class="con">Country</th>
+		<th class="action">Action</th>
+	</tr>
+	<tr>
+		<td>1.</td>
+		<td>Thomas Hardy</td>
+		<td>89 chiarsco Rd.</td>
+		<td>Portland</td>
+		<td>91219</td>
+		<td>USA</td>
+		<td><i id="eye" class="fa-solid fa-eye"></i>
+		    <i id="pen" class="fa-solid fa-pen"></i>
+		    <i id="del" class="fa-solid fa-trash"></i>
+	    </td>
+	</tr>
+	<tr>
+		<td>2.</td>
+		<td>Maria Anders</i></td>
+		<td>Obere Str.57</td>
+		<td>Berlin </td>
+		<td>12209</td>
+		<td>Germany</td>
+		<td><i id="eye" class="fa-solid fa-eye"></i>
+		    <i id="pen" class="fa-solid fa-pen"></i>
+		    <i id="del" class="fa-solid fa-trash"></i>
+		</td>
+	</tr>
+	<tr>
+		<td>3.</td>
+		<td>Fran Wlison</td>
+		<td>C/Araquil,67</td>
+		<td>Madrid </td>
+		<td>28023</td>
+		<td>Spain</td>
+		<td><i id="eye" class="fa-solid fa-eye"></i>
+		    <i id="pen" class="fa-solid fa-pen"></i>
+		    <i id="del" class="fa-solid fa-trash"></i>
+		</td>
+	</tr>
+	<tr>
+		<td>4.</td>
+		<td>Dominic Perrier</td>
+		<td>25.rue Lauriston</td>
+		<td>Paris</td>
+		<td>75016</td>
+		<td>France</td>
+		<td><i id="eye" class="fa-solid fa-eye"></i>
+		    <i id="pen" class="fa-solid fa-pen"></i>
+		    <i id="del" class="fa-solid fa-trash"></i>
+		</td>
+	</tr>
+	<tr>
+		<td>5.</td>
+		<td>Martin Blank</i></td>
+		<td>Via Monteblanco 34</td>
+		<td>Turin</td>
+		<td>10100</td>
+		<td>Italy</td>
+		<td><i id="eye" class="fa-solid fa-eye"></i>
+		    <i id="pen" class="fa-solid fa-pen"></i>
+		    <i id="del" class="fa-solid fa-trash"></i>
+		</td>
+	</tr>
+</table>
+<p class="low">Showing 5 out of 25 entites</p>
+<p class="rig"><span class="pre">Previous</span> <span class="one">1</span> <span class="one">2</span> <span class="one" id="three">3</span> <span class="one">4</span> <span class="one">5</span> <span class="next">Next</span> </p>
+</body>
+</html>

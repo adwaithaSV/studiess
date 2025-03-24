@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alert</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		h3{
+			text-align: center;
+			color:#0931c8;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>LIBRARY DETAILS<br></h3>
+		<table class="table-bordered table-responsive table-hover">
+			<thead class="table-dark" style="text-align: center;">
+				<tr>
+					<th style="width:40px"> ID </th>
+					<th style="width:400px"> BOOK TITLE </th>
+					<th style="width:400px"> NAME OF BORROWER</th>
+					<th style="width:200px"> DATE OF BORROW </th>
+					<th style="width:200px"> LAST DATE TO RETURN </th>
+					<th style="width:200px"> DATE OF RETURN</th>
+					<th style="width:200px"> FINE AMOUNT </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="green">
+					<td>1</td>
+					<td>The Lord of the Rings </td>
+					<td>Kausshi</td>
+					<td>18/03/2025</td>
+					<td>18/04/2025</td>	
+					<td class="table-success">10/04/2025</td>	
+					<td>-</td>
+				</tr>
+				<!-- <div class="alert  alert-success alert-dismissible fade show"><button type="button" class="close" data-dismiss="alert">&times;</button>BOOK RETURNED</div> -->
+				
+				<tr class="yellow">
+					<td>2</td>
+					<td>The Alchemist</td>
+					<td>Aushwanth</td>
+					<td>20/02/2025</td>
+					<td>20/03/2025</td>	
+					<td class="table-warning">-</td>
+					<td>-</td>		
+				</tr>
+					<!-- <div class="alert alert-warning alert-dismissible fade show"><button type="button" class="close" data-dismiss="alert">&times;</button>Your Return Date is Too Close</div>		 -->
+				<tr class="red">
+					<td>3</td>
+					<td>The Catcher in the Rye</td>
+					<td>Vignesh</td>
+					<td>16/02/2025</td>
+					<td>16/03/2025</td>
+					<td class="table-danger">-</td>
+					<td>60 Rs</td>
+				</tr>
+					<!-- <div class="alert alert-danger alert-dismissible fade show"><button type="button" class="close" data-dismiss="alert">&times;</button>Your Return Date is Over Pay Fine</div> -->
+				<tr class="red">
+					<td>4</td>
+					<td>Don Quixote</td>
+					<td>Varsha</td>
+					<td>10/02/2025</td>
+					<td>10/03/2025</td>
+					<td class="table-danger">-</td>
+					<td>160 Rs</td>
+				</tr>
+					<!-- <div class="alert alert-danger alert-dismissible fade show"><button type="button" class="close" data-dismiss="alert">&times;</button>Your Return Date is Over Pay Fine</div> -->
+				<tr class="green">
+					<td>5</td>
+					<td>The Da Vinci Code</td>
+					<td>Ashika</td>
+					<td>11/03/2025</td>
+					<td>11/04/2025</td>	
+					<td class="table-success">10/04/2025</td>	
+					<td>-</td>
+				</tr>
+				<tr class="yellow">
+					<td>6</td>
+					<td>The Twilight Saga</td>
+					<td>Manisha</td>
+					<td>21/02/2025</td>
+					<td>21/03/2025</td>	
+					<td class="table-warning">-</td>
+					<td>-</td>		
+				</tr>
+				<tr class="red">
+					<td>7</td>
+					<td>The Great Gatsbye</td>
+					<td>Adwaitha</td>
+					<td>15/02/2025</td>
+					<td>15/03/2025</td>
+					<td class="table-danger">-</td>
+					<td>80 Rs</td>
+				</tr>
+			</tbody>
+		</table>
+	</div> 
+</body>
+</html>
