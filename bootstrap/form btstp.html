@@ -10,8 +10,8 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body class="bg-primary">
-	<div class="container bg-light" style="margin-top:30px;margin-bottom: 10px;padding: 50px 100px;">
-		<h1 class="display-4 text-primary" style="font-size:20px; margin-bottom:30px; text-align: center;"><strong><b>Fill The Below Details</b></strong></h1>
+	<div class="container bg-light" style="padding:10px 100px;">
+		<h1 class="display-4 text-primary" style="font-size:40px; margin-bottom:30px; text-align: center;"><strong>Fill The Below Details</strong></h1>
 		<div class="input-group">
 			<div class="input-group-prepend">
 				<span class="input-group-text bg-primary text-light">Username</span>
@@ -46,6 +46,13 @@
 			<label name="Gender" value="Female"style="margin:10px;">Female</label>
   		</div>
   		<br>
+  		<div class="input-group">
+			<div class="input-group-prepend" >
+				<span class="input-group-text bg-primary text-light">Phone </span>
+			</div>
+			<input type="tel" class="form-control" maxlength="10" placeholder="Enter Phone number">
+  		</div>
+  		<br>
 		<div class="input-group">
 			<div class="input-group-prepend">
 				<span class="input-group-text bg-primary text-light">Age</span>
@@ -74,7 +81,14 @@
 			<input type="text" class="form-control" placeholder="Enter Your Country">
   		</div>
   		<br>
-  		<div class="btn btn-success">submit</div>
+  		<div class="row">
+  			<div class="col-1">
+  				<div class="btn btn-success">submit</div>
+  			</div>
+  			<div class="col-1">
+  				<div class="btn btn-danger">Home</div>
+  			</div>
+  		</div>
 	</div>
 
 </body>
