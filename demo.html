@@ -1,51 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h1 style="color:gold;">html</h1>
-	<h1> css</h1>
-<script type="text/javascript">
-// square
-	let side=Number(prompt("enter the side"));
-	let perimeter=4*side;
-	console.log("perimeter :"+perimeter);
-	let area =side**2;
-	console.log("area is"+area);
-// rectangle
-	let length=Number(prompt("enter the length"));
-	let width=Number(prompt("enter the width"));
-	let perimeter1=2*(length+width);
-	console.log("perimeter :"+perimeter1);
-	let area1=length*width;
-	console.log("area :"+area1);
-// triangle
-	let a=Number(prompt("enter the 1st side"));
-	let b=Number(prompt("enter the 2nd side"));
-	let c=Number(prompt("enter the 3rd side"));
-	let perimeter2 =a+b+c;
-	console.log("perimeter :"+perimeter2);
-	let base=Number(prompt("enter the base"));
-	let height=Number(prompt("enter the height"));
-	let area2= 0.5*(base*height);
-	console.log("area :"+area2);
-// circle
-	const pi=3.14;
-	let r=Number(prompt("enter the radius"));
-	let circum=2*pi*r;
-      	console.log("circumference"+circum);
-	let area3=pi*r**2;
-	console.log("area :"+area3);
-// hexagon
-	  let side2=Number(prompt("enter the side"));
-	  let perimeter3=6*side2;
-	  console.log("perimeter :"+perimeter3);
-	  let area4=((3*1.732)/2)*side2 **2;
-	  console.log("area :"+area4);
-	  
-</script>
+  <div class="container">
+  <h2>Modal Example</h2>
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Modal body..
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
