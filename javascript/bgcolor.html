@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bg</title>
+    </head>
+    <body id="clr">
+        <button onclick="bgclr()">Click</button>
+        <script>
+            function bgclr(){
+                var r = Math.floor(Math.random()*255)
+                var b = Math.floor(Math.random()*255)
+                var g = Math.floor(Math.random()*255)
+                document.getElementById("clr").style.backgroundColor= "rgb("+r+","+b+","+g+")";
+                }
+        </script>
+        
+    </body>
+</html>
