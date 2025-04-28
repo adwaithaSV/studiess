@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body class="container mt-5 bg-dark">
+	<div class="card bg-light m-5 p-5">
+		<h1 class="text-success" style="text-align: center;">Calculator</h1>
+			<label for="1st">Enter value :</label>
+			<input type="text" id="1st" class="form-control">
+			<label for="2nd">Enter value :</label>
+			<input type="text" id="2nd" class="form-control">
+			<label for="operation">Select Operation:</label>
+			<select id="operation" class="form-control">
+				<option value="+">ADD</option>
+				<option value="-">SUBTRACT</option>
+				<option value="*">MULTIPLY</option>
+				<option value="/">DIVIDE</option>
+			</select>
+		<button onclick="calculation()" class="btn btn-success mt-3">=</button>
+		<div id="result" class="mt-3" style="text-align:center; font-weight:bolder ; font-size: 35px;">0</div>
+	</div>
+	<script>
+		//addition
+		function add(x, y) {
+			return x + y;
+		}
+		//subtraction
+		function sub(x, y) {
+			return x - y;
+		}
+		//multiplication
+		function multiply(x, y) {
+			return x * y;
+		}
+		//division
+		function divide(x, y) {
+			if (y === 0) {
+				return "Can't divide by 0";
+			}
+			return x / y;
+		}
+		// Display result
+		function printresult(result) {
+			document.getElementById("result").innerHTML = result;
+		}
+		// calculation
+		function calculation() {
+			let x = parseFloat(document.getElementById("1st").value);
+			let y = parseFloat(document.getElementById("2nd").value);
+
+			if (isNaN(x) || isNaN(y)) {
+				window.alert("Please enter valid numbers.");
+				return;
+			}
+			let operation = document.getElementById("operation").value;
+			let result;
+			switch (operation) {
+				case '+':
+					result = add(x, y);
+					break;
+				case '-':
+					result = sub(x, y);
+					break;
+				case '*':
+					result = multiply(x, y);
+					break;
+				case '/':
+					result = divide(x, y);
+					break;
+				default:
+					result = "Invalid Operation";
+			}
+			printresult(result);
+		}
+	</script>
+</body>
+</html>
