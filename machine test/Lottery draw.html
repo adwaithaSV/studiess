@@ -13,7 +13,7 @@
 	<div class="container text-center">
 		<h1 class="display-3 text-danger" style="font-weight:bolder;">Lottery Draw</h1>
 		<button class="btn btn-danger text-white font-weight-bolder m-5 p-3" onclick="winner()" id="button1" data-toggle="modal" data-target="#modal-winnerw2">SELECT WINNER</button>
-		<h2 id="op-1" class="text-danger" style="font-size: 70px;"></h2>
+		<h2 id="op-1"style="font-size: 70px;"></h2>
 		<div class="modal fade" id="modal-winnerw2">
     		<div class="modal-dialog modal-dialog-centered">
       			<div class="modal-content">
@@ -23,7 +23,7 @@
         			</div>
         			<div class="modal-body">
         				<div class="modal-back">
-        					<p class="h3-lot text-danger display-4" id="modal-winner"></p>
+        					<p class="h3-lot display-4" id="modal-winner"></p>
         				</div>
         			</div>
         			<div class="modal-footer">
@@ -34,16 +34,17 @@
     	</div>
 	</div>
 	<script type="text/javascript">
-		//Array of tickets
 		function winner(){
 			var ticket=[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115];
 			var win=Math.floor(Math.random()*16);
 			document.getElementById("op-1").innerHTML=ticket[win];
+			document.getElementById("op-1").style.color="red"
 			document.getElementById("modal-winner").innerHTML=ticket[win];
+			document.getElementById("modal-winner").style.color="red";
 			console.log(ticket[win]);
 		}
 
 	</script>
-
+ 
 </body>
 </html>
